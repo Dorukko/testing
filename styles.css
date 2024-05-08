@@ -1,11 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-
-
-      
+    padding-bottom: 200vh; /* Adjust the percentage as needed */
 }
+
 
 header {
     background-color: #333;
@@ -146,7 +144,6 @@ h1{
     background-position: 200%;
   }
 } */
-
 
 
 
