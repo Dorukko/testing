@@ -1,46 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Classes for Change Atlanta</title>
-    <link rel="icon" href="logo.png" type="image/png"> <!-- Change favicon to logo.png -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        .bottom-spacing {
+            position: absolute;
+            bottom: 0;
+            height: 9000px;
+            width: 100%; /* Ensures the element spans the entire width of the viewport */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo" class="logo"> <!-- Add the logo -->
-        <h1>
-            <span>Classes for Change</span>
-            <span>Atlanta</span>
-        </h1>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </header>
-    <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Schedule</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <h2>Welcome to our Classes for Change Atlanta!</h2>
-        <p>Feel free to explore our website.</p>
-    </main>
-    <footer>
-        Classes for Change Atlanta
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            var menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('open');
-            menuToggle.classList.toggle('open');
-        }
-    </script>
+    <!-- Your content here -->
+    <div class="bottom-spacing"></div>
 </body>
 </html>
