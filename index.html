@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .bottom-spacing {
-            position: absolute;
-            bottom: 0;
-            height: 9000px;
-            width: 100%; /* Ensures the element spans the entire width of the viewport */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Classes for Change Atlanta</title>
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Change favicon to logo.png -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <!-- Your content here -->
-    <div class="bottom-spacing"></div>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Add the logo -->
+        <h1>
+            <span>Classes for Change</span>
+            <span>Atlanta</span>
+        </h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#about" onclick="scrollToSection('about')">About</a>
+        <a href="#events" onclick="scrollToSection('events')">Schedule</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+    <main>
+        <h2 id="home">Welcome to our Classes for Change Atlanta!</h2>
+        <p>Feel free to explore our website.</p>
+        <h2 id="about">About</h2>
+        <p>This is the about section.</p>
+        <h2 id="events">Schedule</h2>
+        <p>This is the schedule section.</p>
+        <h2 id="contact">Contact</h2>
+        <p>This is the contact section.</p>
+    </main>
+    <footer>
+        Classes for Change Atlanta
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            var menuToggle = document.querySelector('.menu-toggle');
+            menu.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        }
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
