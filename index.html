@@ -42,16 +42,22 @@
 
     <script>
         function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            var menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('open');
-            menuToggle.classList.toggle('open');
-        }
+        var menu = document.querySelector('.menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        menu.classList.toggle('open');
+        menuToggle.classList.toggle('open');
+    }
 
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+
+        // Close the menu after clicking on a link
+        var menu = document.querySelector('.menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        menu.classList.remove('open');
+        menuToggle.classList.remove('open');
+    }
     </script>
 </body>
 </html>
