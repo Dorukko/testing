@@ -4,7 +4,9 @@ body {
     padding-bottom: 200vh; /* Adjust the percentage as needed */
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 header {
     background-color: #333;
     color: #fff;
