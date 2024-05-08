@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonprofit Organization</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home - Classes for Change Atlanta</title>
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Change favicon to logo.png -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
     <header>
-        <h1>Nonprofit Organization</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Add the logo -->
+        <h1>
+            <span>Classes for Change</span>
+            <span>Atlanta</span>
+        </h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Insert information about your nonprofit organization here.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Highlight your organization's projects and initiatives here.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Include contact information and a form for inquiries.</p>
-    </section>
-
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Welcome to our Classes for Change Atlanta!</h2>
+        <p>Feel free to explore our website.</p>
+    </main>
     <footer>
-        <p>&copy; 2024 Nonprofit Organization</p>
+        Classes for Change Atlanta
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            var menuToggle = document.querySelector('.menu-toggle');
+            menu.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
