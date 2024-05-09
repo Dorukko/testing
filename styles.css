@@ -1,12 +1,13 @@
+
 body {
+    background-color: #242424;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding-bottom: 200vh; /* Adjust the percentage as needed */
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 header {
     background-color: #333;
     color: #fff;
@@ -16,6 +17,9 @@ header {
     background: linear-gradient(to right, rgb(255, 0, 119), yellow);
     background-size: 200% auto;
     animation: gradientAnimation 50s ease infinite;
+    
+   
+    
     }
     
 @keyframes gradientAnimation {
@@ -36,6 +40,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
+    border-bottom: 2px solid #ff0000; /* Add a 2px solid border on the top side */
 }
 
 nav a {
@@ -123,7 +128,7 @@ p a:hover::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 164px;
+    width: 165px;
     height: auto;
     border-top: 2px solid #333; /* Add a 2px solid border on the top side */
     border-right: 2px solid #333; /* Add a 2px solid border on the right side */
@@ -162,9 +167,14 @@ h1{
 
 
 
-
 @media (max-width: 750px) {
     /* Hamburger menu styles */
+    main {
+        
+        
+        border-top: 2px solid #ff0000;
+
+    }
     nav a::before {
         content: "";
         position: absolute;
@@ -301,7 +311,7 @@ h1{
         font-size: 30px;
         margin: 0;
         padding: 0;
-        padding-top: 72px;
+        padding-top: 71px;
         display: flex;
         flex-direction: column; /* Display the content in a column layout */
         align-items: flex-end; /* Align items to the right */
