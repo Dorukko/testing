@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - School Club Website</title>
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Change favicon to logo.png -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Add the logo -->
+        <h1>
+            <span>Classes for Change</span>
+            <span>Atlanta</span>
+        </h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>About Us</h2>
+        <div class="long-text">
+            <p>Our native speakers are dedicated to improving pronounciation, comprehension, and building confidence in foreign speakers striving to attain fluency in English. Classes for Change is a non-profit organization that offers a chance for real-life conversation practice, cultural exchange and understanding, and immediate feedback on language usage, grammar, and pronunciation. </p>
+            <p> <a href="mailto:Classesforchangeatl@gmail.com">Email us</a> and schedule free calls with our native speakers today and gain command of the English language!</p>
+        </div>
+          
+    </main>
+    <footer>
+        Classes for Change Atlanta
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            var menuToggle = document.querySelector('.menu-toggle');
+            menu.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
