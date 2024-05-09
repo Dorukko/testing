@@ -169,12 +169,7 @@ h1{
 
 @media (max-width: 750px) {
     /* Hamburger menu styles */
-    main {
-        
-        
-        border-top: 2px solid #ff0000;
-
-    }
+    
     nav a::before {
         content: "";
         position: absolute;
