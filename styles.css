@@ -305,7 +305,7 @@ h1{
         font-size: 30px;
         margin: 0;
         padding: 0;
-        padding-top: 72px;
+        padding-top: 73px;
         display: flex;
         flex-direction: column; /* Display the content in a column layout */
         align-items: flex-end; /* Align items to the right */
