@@ -115,7 +115,6 @@ p a:hover::before {
 .eventlist .day {
     
     text-decoration: underline;
-    flex: 1;
 }
 
 .long-text {
