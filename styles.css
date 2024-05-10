@@ -173,8 +173,7 @@ p a:hover::before {
     left: 0;
     width: 165px;
     height: auto;
-    border-top: 2px solid #242424; /* Add a 2px solid border on the top side */
-    border-right: 2px solid #242424; /* Add a 2px solid border on the  /* Add a 2px solid border on the /* Add a 2px solid border on the left side */
+ /* Add a 2px solid border on the  /* Add a 2px solid border on the /* Add a 2px solid border on the left side */
 }
 
 
