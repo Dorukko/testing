@@ -362,7 +362,7 @@ p{
         margin: 0; /* Remove default margin */
         display: flex; /* Use flexbox */
         align-items: center; /* Center vertically */
-        justify-content: flex-end; /* Align items to the right */
+        justify-content: center; /* Align items to the right */
         padding: 0; /* Remove padding */
         padding-top: 15px; /* Adjust top padding as needed */
         padding-bottom: 15px; /* Adjust bottom padding as needed */
