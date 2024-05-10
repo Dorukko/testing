@@ -40,7 +40,9 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #ff0000; /* Add a 2px solid border on the top side */
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(255, 0, 119), yellow); /* Add linear gradient as border */
+    border-image-slice: 1; /* Ensure the gradient covers the entire border */
 }
 
 nav a {
@@ -158,6 +160,24 @@ p{
     font-weight: bold;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: fadeInDown 0.5s ease; /* Add animation */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
