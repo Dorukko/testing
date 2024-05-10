@@ -171,11 +171,10 @@ p a:hover::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 163px;
+    width: 165px;
     height: auto;
     border-top: 2px solid #242424; /* Add a 2px solid border on the top side */
-    border-right: 2px solid #242424; /* Add a 2px solid border on the right side */
-    border-bottom: 2px solid #242424; /* Add a 2px solid border on the /* Add a 2px solid border on the left side */
+    border-right: 2px solid #242424; /* Add a 2px solid border on the  /* Add a 2px solid border on the /* Add a 2px solid border on the left side */
 }
 
 
@@ -352,7 +351,7 @@ p{
         font-size: 30px;
         margin: 0;
         padding: 0;
-        padding-top: 71px;
+        padding-top: 69px;
         display: flex;
         flex-direction: column; /* Display the content in a column layout */
         align-items: flex-end; /* Align items to the right */
