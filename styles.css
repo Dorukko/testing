@@ -41,8 +41,19 @@ nav {
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid;
-    border-image: linear-gradient(to right, rgb(255, 0, 119), yellow); /* Add linear gradient as border */
-    border-image-slice: 1; /* Ensure the gradient covers the entire border */
+    animation: borderGradientAnimation 50s ease infinite; /* Add border gradient animation */
+}
+
+@keyframes borderGradientAnimation {
+    0% {
+        border-color: rgb(255, 0, 119);
+    }
+    50% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: rgb(255, 0, 119);
+    }
 }
 
 nav a {
@@ -52,11 +63,42 @@ nav a {
     position: relative;
     display: inline-block;
     padding: 5px 10px;
-    
     font-size: 20px;
     padding-bottom: 0px;
     font-weight: bold;
     text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid;
+    animation: borderGradientAnimation 50s ease infinite, fadeInDown 0.5s ease; /* Add both animations */
+}
+
+@keyframes borderGradientAnimation {
+    0% {
+        border-color: rgb(255, 0, 119);
+    }
+    50% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: rgb(255, 0, 119);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 nav a:hover {
     color: #ffcc00; /* Change color on hover */
@@ -160,24 +202,7 @@ p{
     font-weight: bold;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    animation: fadeInDown 0.5s ease; /* Add animation */
-}
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 
