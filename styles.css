@@ -171,7 +171,7 @@ p a:hover::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 165px;
+    width: 163px;
     height: auto;
  /* Add a 2px solid border on the  /* Add a 2px solid border on the /* Add a 2px solid border on the left side */
 }
