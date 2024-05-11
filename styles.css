@@ -263,8 +263,6 @@ p{
         
         background: linear-gradient(to right, rgb(255, 0, 119), yellow);
         background-size: 200% auto;
-        
-        padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: top .4s ease; /* Add transition for smooth sliding */
         z-index: 9998;
@@ -292,11 +290,12 @@ p{
     .menu.open {
         top: 0; /* Slide the menu in from the left */
     }
-    
-    
     .menu a {
         display: block; /* Change to block for stacking */
-        padding: 20px 40px; /* Increase padding for better spacing */
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         color: #fff; /* White text color */
         text-decoration: none;
         transition: color 0.3s, transform 0.3s; /* Add transition for color and transform */
