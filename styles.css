@@ -165,7 +165,7 @@ p a:hover::before {
 
 .day {
     display: inline-block;
-    width: 100px; /* Adjust the width as needed */
+    width: 115px; /* Adjust the width as needed */
 }
 .time {
     display: inline-block;
