@@ -42,7 +42,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
-    border-bottom: 6px solid;
+    border-bottom: 5px solid;
     animation: borderGradientAnimation 50s ease infinite; /* Add border gradient animation */
 }
 
@@ -82,13 +82,13 @@ nav a {
 
 @keyframes borderGradientAnimation {
     0% {
-        border-color: rgb(255, 0, 119);
+        border-color: rgb(0, 0, 255);
     }
     50% {
-        border-color: yellow;
+        border-color: rgb(0, 140, 255);
     }
     100% {
-        border-color: rgb(255, 0, 119);
+        border-color: rgb(0, 0, 255);
     }
 }
 
