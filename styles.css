@@ -402,7 +402,7 @@ p{
         font-size: 30px;
         margin: 0;
         padding: 0;
-        padding-top: 74px;
+        padding-top: 72px;
         display: flex;
         flex-direction: column; /* Display the content in a column layout */
         align-items: flex-end; /* Align items to the right */
